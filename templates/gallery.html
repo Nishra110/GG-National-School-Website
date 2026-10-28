@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our School Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">GG NATIONAL SCHOOL</div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/classes">Classes</a></li>
+        <li><a href="/teachers">Teachers</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="classes">
+    <h2>Explore Our School</h2>
+    <p>Take a look at our school building and classrooms.</p>
+
+
+<div class="class-container">
+
+    <div class="class-card">
+        <img src="{{ url_for('static', filename='school1.jpeg') }}" alt="Main Gate" width="100%">
+        <h3>Main Gate</h3>
+        <p>The main entrance of our school.</p>
+    </div>
+
+
+        <div class="class-card">
+        <img src="{{ url_for('static', filename='school2.jpeg') }}" alt="School Ground" width="100%">
+        <h3>School Ground</h3>
+        <p>Our school ground for activities and play.</p>
+    </div>
+
+        <div class="class-card">
+        <img src="{{ url_for('static', filename='school3.jpeg') }}" alt="Staff Room" width="100%">
+        <h3>Staff Room</h3>
+        <p>A space for our school staff.</p>
+    </div>
+
+
+    <div class="class-card">
+        <img src="{{ url_for('static', filename='school4.jpeg') }}" alt="School Building" width="100%">
+        <h3>School Building</h3>
+        <p>A view of our school building.</p>
+    </div>
+
+</div>
+
+</section>
+
+</body>
+</html>

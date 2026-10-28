@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Teachers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">GG NATIONAL SCHOOL</div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/classes">Classes</a></li>
+        <li><a href="/teachers">Teachers</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="classes">
+    <h2>Our Teachers</h2>
+
+    <div class="class-container">
+        <a href="/teacher/teacher1" class="class-card">
+            <h3>Teacher 1</h3>
+            <p>Teaching and Learning</p>
+            <span>View Details →</span>
+        </a>
+
+        <a href="/teacher/teacher2" class="class-card">
+            <h3>Teacher 2</h3>
+            <p>Student Guidance</p>
+            <span>View Details →</span>
+        </a>
+
+        <a href="/teacher/teacher3" class="class-card">
+            <h3>Teacher 3</h3>
+            <p>Student Support</p>
+            <span>View Details →</span>
+        </a>
+    </div>
+</section>
+
+</body>
+</html>

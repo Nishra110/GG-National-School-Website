@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form - GG National School</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">GG NATIONAL SCHOOL</div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/classes">Classes</a></li>
+        <li><a href="/teachers">Teachers</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="admission-section">
+
+<div class="school-form-heading">
+    <h2>GOVT. (N) MADRESSAH-TUL-BANAT</h2>
+    <h3>HIGH SCHOOL HYDERABAD</h3>
+    <p>R/MADAM</p>
+    <p>I request that my daughter may be admitted in your school.</p>
+</div>
+
+    <h1>Student Admission Form</h1>
+    <p>Please fill in the student details below.</p>
+
+
+<form>
+    <label>Student Name (In Block Letters)</label>
+    <input type="text" name="student_name" required>
+
+    <label>Father's Name</label>
+    <input type="text" name="father_name" required>
+
+    <label>Father's Occupation</label>
+    <input type="text" name="father_occupation" required>
+
+    <label>Religion</label>
+    <input type="text" name="religion" required>
+
+    <label>Date of Birth (In Figures)</label>
+    <input type="date" name="date_of_birth" required>
+
+    <label>Date of Birth (In Words)</label>
+    <input type="text" name="date_of_birth_words" required>
+
+    <label>Place of Birth</label>
+    <input type="text" name="place_of_birth" required>
+
+    <label>Surname</label>
+    <input type="text" name="surname" required>
+
+    <label>Permanent Home Address</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <label>Contact No. (Phone / Mobile)</label>
+    <input type="tel" name="contact_number" required>
+
+    <label>Last School Attended</label>
+    <input type="text" name="last_school" required>
+
+    <label>Admission in Class</label>
+    <select name="admission_class" required>
+        <option value="">Select Class</option>
+        <option>Class 6</option>
+        <option>Class 7</option>
+        <option>Class 8</option>
+        <option>Class 9</option>
+        <option>Class 10</option>
+    </select>
+
+    <label>Father's CNIC Card Copy</label>
+    <input type="file" name="father_cnic" accept="image/*">
+
+    <label>Parents / Guardian Signature</label>
+    <input type="text" name="guardian_signature"
+           placeholder="Parent or guardian name">
+
+    <button type="submit">Submit Application</button>
+</form>
+
+
+<div class="admission-footer">
+    <p>G.R. No. __________________</p>
+
+    <div class="signature-area">
+        <p>________________________</p>
+        <p>Parents / Guardian Signature</p>
+    </div>
+
+    <div class="signature-area">
+        <p>________________________</p>
+        <p>Head Mistress</p>
+        <p>Govt. (N) Madressah-Tul-Banat</p>
+        <p>High School Hyderabad, Sindh</p>
+    </div>
+</div>
+
+</section>
+
+</body>
+</html>
